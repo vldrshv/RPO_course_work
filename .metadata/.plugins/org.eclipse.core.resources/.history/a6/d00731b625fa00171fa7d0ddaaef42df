@@ -1,0 +1,46 @@
+package com.bmstu.geofence.manager.web.portlet.test;
+
+import javax.portlet.ActionRequest;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import com.bmstu.geofence.manager.web.portlet.GeofenceManagerPortlet;
+import com.liferay.portal.kernel.exception.PortalException;
+import com.liferay.portal.kernel.util.ParamUtil;
+
+public class GeofenceManagerPortletTest {
+
+	private GeofenceManagerPortlet geofenceManagerPortlet;
+	
+	@Before
+	public void setUp(){
+		GeofenceManagerPortlet geofenceManagerPortlet = new GeofenceManagerPortlet();
+	}
+	/*
+	 * String geozoneName = ParamUtil.getString(request, "name");
+		String geozoneDescription = ParamUtil.getString(request, "description");
+		String geozoneAreaNumber = ParamUtil.getString(request, "area");
+		long geozoneCalendarId = ParamUtil.getLong(request, "calendarId");
+		String geozoneAttributes = ParamUtil.getString(request, "geozoneAttributes");
+	*	
+	*/
+	
+	
+	@Test
+	public void testAddingGeozone(){
+		ActionRequest request = null ;
+		request.setAttribute("name", "NAME_TEST");
+		request.setAttribute("description", "DESCRIPTION_TEST");
+		request.setAttribute("area", "AREA_TEST");
+		request.setAttribute("calendarId", Long.MAX_VALUE);
+		request.setAttribute("geozoneAttributes", "GEOZONEATTRIBUTES_TEST");
+		
+		try {
+			geofenceManagerPortlet.addGeozone(request, null);
+		} catch (PortalException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

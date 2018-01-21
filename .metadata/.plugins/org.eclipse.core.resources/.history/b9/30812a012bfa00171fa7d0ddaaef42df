@@ -1,0 +1,38 @@
+package com.bmstu.geofence.manager.core.service.test;
+
+//import java.util.List;
+
+//import org.junit.Before;
+import org.junit.Test;
+
+//import com.bmstu.geofence.manager.core.model.Geozone;
+//import com.bmstu.geofence.manager.core.service.base.GeozoneLocalServiceBaseImpl;
+import com.bmstu.geofence.manager.core.service.impl.GeozoneLocalServiceImpl;
+//import com.bmstu.geofence.manager.core.service.persistence.GeozonePersistence;
+import com.liferay.portal.kernel.exception.PortalException;
+//import com.liferay.portal.kernel.service.ServiceContext;
+
+//import junit.framework.Assert;
+
+public class GeozoneLocalServiceImplTest{
+
+	private GeozoneLocalServiceImpl geozoneLocalServiceImpl;
+	
+	//@SuppressWarnings("deprecation")
+	@Test
+	public void setUp() throws PortalException{
+		
+		geozoneLocalServiceImpl = new GeozoneLocalServiceImpl();
+		org.junit.Assert.assertEquals(geozoneLocalServiceImpl, null);
+		//geozoneLocalServiceImpl.addGeozone(1, "NAME_TEST", 
+		//		"DESC_TEST", "AREA_TEST", 1, "ATTR_TEST", new ServiceContext());
+		//GeozonePersistence geozonePresistence = geozoneLocalServiceImpl.getGeozonePersistence();
+		//int countAllGeozonePresistence = geozonePresistence.countAll();
+		//geozoneLocalServiceImpl.getGeofence(1, 0, 1);
+		
+		//Assert.assertEquals(countAllGeozonePresistence, 1);
+		
+	}
+
+	
+}

@@ -1,0 +1,5 @@
+package com.bmstu.geofence.manager.web.portlet.test;
+
+public class GeofenceManagerPortletTest {
+
+}

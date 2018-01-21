@@ -1,0 +1,5 @@
+package com.bmstu.geofence.manager.core.service.test;
+
+public class GeozoneLocalServiceImplTest {
+
+}
